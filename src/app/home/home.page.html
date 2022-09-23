@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div *ngFor="let personaje of narutoAndDragonball">
+    <p>{{personaje.name}}</p>
+    <p>{{personaje.locacion}}</p>
+  </div>
+
+  <!-- <div *ngFor="let personaje of personajes">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{personaje.status}}</ion-card-subtitle>
+        <ion-card-title>{{personaje.name}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+       <img src="{{personaje.image}}">
+       <p>{{personaje.species}}</p>
+      </ion-card-content>
+    </ion-card>
+  </div> -->
+</ion-content>
